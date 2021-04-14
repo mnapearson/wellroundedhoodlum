@@ -1,0 +1,45 @@
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+    overflow: hidden;
+    background-color: black;
+    opacity: 70%;
+    position: sticky;
+    top: 0;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem 0.5rem;
+  }
+
+  .topnav a:hover {
+    background-color: black;
+    color: red;
+  }
+
+  .active {
+    background-color: black;
+    color: red;
+  }
+}
