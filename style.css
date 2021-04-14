@@ -45,7 +45,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 70vh;
-  width: 100vw;
 }
 
 .container {
@@ -66,7 +65,7 @@ header {
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .container .btn:hover {
@@ -90,6 +89,78 @@ header {
 }
 
 .welcome-message {
-  margin: 0 5rem 3rem;
+  margin: 1rem 3rem 3rem;
   text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 5rem 3rem;
+}
+
+.welcome-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.title {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.iconify {
+  font-size: 24px;
+  background-color: #333;
+}
+
+.title h2 {
+  margin-left: 1rem;
+  background-color: #333;
+}
+
+p {
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #333;
+}
+
+.welcome button {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 80%;
+}
+
+.welcome button:hover {
+  opacity: 100%;
+}
+
+.welcome a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.welcome a:hover {
+  color: red;
+  font-weight: bold;
 }

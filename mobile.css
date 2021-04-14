@@ -42,4 +42,8 @@
     background-color: black;
     color: red;
   }
+
+  .cards {
+    flex-wrap: wrap;
+  }
 }
