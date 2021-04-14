@@ -43,7 +43,19 @@
     color: red;
   }
 
+  .welcome-message {
+    max-width: 80%;
+  }
+
+  .welcome h1 {
+    font-size: 28px;
+  }
+
   .cards {
     flex-wrap: wrap;
+  }
+
+  .welcome-card {
+    margin-bottom: 3rem;
   }
 }
