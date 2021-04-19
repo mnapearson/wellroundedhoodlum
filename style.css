@@ -42,14 +42,15 @@ header {
   display: flex;
   flex-direction: column;
   background-image: url(./images/studiophoto.jpg);
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh;
+  height: 100vh;
+  width: 100vw;
 }
 
 .container {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   width: 100%;
 }
@@ -86,6 +87,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .welcome-message {
