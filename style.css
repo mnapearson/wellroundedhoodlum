@@ -165,3 +165,7 @@ p {
   text-decoration: none;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+}
