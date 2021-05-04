@@ -44,7 +44,7 @@
   }
 
   header {
-    height: 45vh;
+    height: 50vh;
   }
 
   .mySlides img {
@@ -66,5 +66,24 @@
 
   .welcome-card {
     margin-bottom: 3rem;
+  }
+
+  .mobile-open {
+    margin-top: 500px;
+  }
+
+  .contact {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .contact-form {
+    width: 80%;
+    left: 0;
+  }
+
+  .contact-image img {
+    width: 300px;
+    height: auto;
   }
 }
