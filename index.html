@@ -26,7 +26,7 @@
     <link rel="icon" href="./images/wellroundedlogo.jpg" type="image/png" />
     <title>Well Rounded Hoodlum</title>
   </head>
-  <body>
+  <body id="home">
     <nav>
       <div class="logo">
         <a href="#home" class="active"
@@ -68,7 +68,7 @@
         <i class="fa fa-bars" style="color: white"></i>
       </a>
     </div>
-    <header id="home">
+    <header>
       <!-- Slideshow container -->
       <div class="slideshow-container">
         <div class="mySlides fade">
@@ -203,62 +203,109 @@
         </div>
       </div>
     </section>
-    <section id="services" class="services">
-      <h1>Services</h1>
-      <div class="services-menu" id="services-menu">
-        <div class="dropdown" id="audio-services">
-          <button onclick="audioServices()" class="dropbtn">Audio</button>
-          <div id="myDropdown1" class="dropdown-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos est sint iusto facilis quidem et nisi doloremque
-              voluptate cupiditate labore aliquid quam, dolorem asperiores dolor
-              nemo distinctio ipsam voluptas ratione alias porro optio
-              obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
-              optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
-            </p>
+    <section class="services" id="services">
+      <div class="services-image">
+        <div class="slideshow-container">
+          <div class="myServiceSlides fade">
+            <img src="/images/guitars.png" style="width: 80%" />
+          </div>
+          <div class="myServiceSlides fade">
+            <img src="/images/studio2.png" style="width: 80%" />
+          </div>
+          <div class="myServiceSlides fade">
+            <img src="/images/bandrecord.png" style="width: 80%" />
           </div>
         </div>
-
-        <div class="dropdown" id="visual-services">
-          <button onclick="visualServices()" class="dropbtn">Visual</button>
-          <div id="myDropdown2" class="dropdown-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos est sint iusto facilis quidem et nisi doloremque
-              voluptate cupiditate labore aliquid quam, dolorem asperiores dolor
-              nemo distinctio ipsam voluptas ratione alias porro optio
-              obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
-              optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
-            </p>
+      </div>
+      <div class="services-info">
+        <h1>Services</h1>
+        <div class="services-menu" id="services-menu">
+          <div class="dropdown" id="audio-services">
+            <button onclick="audioServices()" class="dropbtn">
+              Audio
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="bx:bxs-down-arrow"
+                style="color: white"
+              ></span>
+            </button>
+            <div id="myDropdown1" class="dropdown-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dignissimos est sint iusto facilis quidem et nisi doloremque
+                voluptate cupiditate labore aliquid quam, dolorem asperiores
+                dolor nemo distinctio ipsam voluptas ratione alias porro optio
+                obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
+                optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="dropdown" id="media-services">
-          <button onclick="mediaServices()" class="dropbtn">Media</button>
-          <div id="myDropdown3" class="dropdown-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos est sint iusto facilis quidem et nisi doloremque
-              voluptate cupiditate labore aliquid quam, dolorem asperiores dolor
-              nemo distinctio ipsam voluptas ratione alias porro optio
-              obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
-              optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
-            </p>
+          <div class="dropdown" id="visual-services">
+            <button onclick="visualServices()" class="dropbtn">
+              Visual
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="bx:bxs-down-arrow"
+                style="color: white"
+              ></span>
+            </button>
+            <div id="myDropdown2" class="dropdown-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dignissimos est sint iusto facilis quidem et nisi doloremque
+                voluptate cupiditate labore aliquid quam, dolorem asperiores
+                dolor nemo distinctio ipsam voluptas ratione alias porro optio
+                obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
+                optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="dropdown" id="event-services">
-          <button onclick="eventServices()" class="dropbtn">Events</button>
-          <div id="myDropdown4" class="dropdown-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos est sint iusto facilis quidem et nisi doloremque
-              voluptate cupiditate labore aliquid quam, dolorem asperiores dolor
-              nemo distinctio ipsam voluptas ratione alias porro optio
-              obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
-              optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
-            </p>
+          <div class="dropdown" id="media-services">
+            <button onclick="mediaServices()" class="dropbtn">
+              Media
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="bx:bxs-down-arrow"
+                style="color: white"
+              ></span>
+            </button>
+            <div id="myDropdown3" class="dropdown-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dignissimos est sint iusto facilis quidem et nisi doloremque
+                voluptate cupiditate labore aliquid quam, dolorem asperiores
+                dolor nemo distinctio ipsam voluptas ratione alias porro optio
+                obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
+                optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
+              </p>
+            </div>
+          </div>
+
+          <div class="dropdown" id="event-services">
+            <button onclick="eventServices()" class="dropbtn">
+              Events
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="bx:bxs-down-arrow"
+                style="color: white"
+              ></span>
+            </button>
+            <div id="myDropdown4" class="dropdown-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dignissimos est sint iusto facilis quidem et nisi doloremque
+                voluptate cupiditate labore aliquid quam, dolorem asperiores
+                dolor nemo distinctio ipsam voluptas ratione alias porro optio
+                obcaecati. Ducimus molestias recusandae, mollitia eos sapiente
+                optio accusamus facere est. Nostrum nam ducimus non fuga magnam.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1328,7 +1375,7 @@
         <script src="https://cdn.jotfor.ms//common/FormUserScripts.js"></script>
       </div>
       <div class="contact-image">
-        <img src="images/livephoto.jpg" alt="" />
+        <img src="images/kidyells.png" alt="" />
       </div>
     </section>
     <footer></footer>

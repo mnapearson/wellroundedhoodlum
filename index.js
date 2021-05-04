@@ -13,6 +13,7 @@ showSlides();
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -21,31 +22,44 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000);
+}
+
+var serviceSlideIndex = 0;
+showServiceSlides();
+
+function showServiceSlides() {
+  var i;
+  var serviceSlides = document.getElementsByClassName("myServiceSlides");
+  for (i = 0; i < serviceSlides.length; i++) {
+    serviceSlides[i].style.display = "none";
+  }
+  serviceSlideIndex++;
+  if (serviceSlideIndex > serviceSlides.length) {
+    serviceSlideIndex = 1;
+  }
+  serviceSlides[serviceSlideIndex - 1].style.display = "block";
+  setTimeout(showServiceSlides, 4000); // Change image every 2 seconds
 }
 
 function audioServices() {
   document.getElementById("myDropdown1").classList.toggle("show");
-  document.getElementById("contact").classList.add("open");
-  document.getElementById("visual-services").classList.toggle("mobile-open");
+  document.getElementById("visual-services").classList.toggle("open");
 }
 
 function visualServices() {
   document.getElementById("myDropdown2").classList.toggle("show");
-  document.getElementById("contact").classList.add("open");
-  document.getElementById("media-services").classList.toggle("mobile-open");
+  document.getElementById("media-services").classList.toggle("open");
 }
 
 function mediaServices() {
   document.getElementById("myDropdown3").classList.toggle("show");
-  document.getElementById("contact").classList.add("open");
-  document.getElementById("event-services").classList.toggle("mobile-open");
+  document.getElementById("event-services").classList.toggle("open");
 }
 
 function eventServices() {
   document.getElementById("myDropdown4").classList.toggle("show");
-  document.getElementById("contact").classList.add("open");
-  document.getElementById("contact").classList.toggle("mobile-open");
+  document.getElementById("contact").classList.toggle("open");
 }
 
 window.onclick = function (event) {
@@ -57,12 +71,12 @@ window.onclick = function (event) {
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
+      var openDropdowns = dropdown[i];
 
       if (openDropdown.classList.contains("show")) {
         openDropdown.classList.remove("show");
         contact.classList.remove("open");
-        contact.classList.remove("mobile-open");
-        dropdown.classList.remove("mobile-open");
+        openDropdowns.classList.remove("open");
       }
     }
   }

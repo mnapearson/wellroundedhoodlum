@@ -52,6 +52,11 @@
     height: auto;
   }
 
+  .myServiceSlides img {
+    width: 250px;
+    height: auto;
+  }
+
   .welcome-message {
     max-width: 80%;
   }
@@ -68,8 +73,8 @@
     margin-bottom: 3rem;
   }
 
-  .mobile-open {
-    margin-top: 500px;
+  .services {
+    flex-wrap: wrap;
   }
 
   .contact {
