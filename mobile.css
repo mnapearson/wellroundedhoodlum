@@ -43,6 +43,15 @@
     color: red;
   }
 
+  header {
+    height: 45vh;
+  }
+
+  .mySlides img {
+    width: 250px;
+    height: auto;
+  }
+
   .welcome-message {
     max-width: 80%;
   }

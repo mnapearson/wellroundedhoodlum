@@ -25,6 +25,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem;
+  z-index: 1;
 }
 
 .nav-links a {
@@ -39,26 +40,97 @@ nav {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  background-image: url(./images/studiophoto.jpg);
-  background-size: cover;
-  background-position: center;
   height: 100vh;
   width: 100vw;
 }
 
-.container {
+.slideshow-container {
+  max-width: 1200px;
+  max-height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
-  top: 80%;
-  left: 50%;
-  width: 100%;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.welcome-message {
+  margin: 1rem 3rem 3rem;
+  text-align: center;
+  max-width: 60%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 2rem;
 }
 
 .container .btn {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   background-color: white;
   opacity: 70%;
   color: white;
@@ -80,20 +152,6 @@ header {
   font-weight: bold;
   color: orange;
   background: transparent;
-}
-
-.welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.welcome-message {
-  margin: 1rem 3rem 3rem;
-  text-align: center;
-  max-width: 60%;
 }
 
 .cards {
@@ -160,9 +218,11 @@ p {
 }
 
 .welcome a {
-  background-color: white;
-  color: black;
+  text-transform: uppercase;
   text-decoration: none;
+  font-weight: bold;
+  color: orange;
+  background: transparent;
 }
 
 .contact {
