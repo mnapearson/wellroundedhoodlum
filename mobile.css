@@ -49,13 +49,17 @@
   }
 
   .mySlides img {
-    width: 250px;
-    height: auto;
+    height: 500px;
+    width: auto;
   }
 
   .myServiceSlides img {
-    width: 250px;
+    width: 100vw;
     height: auto;
+  }
+
+  .container {
+    margin-top: 4rem;
   }
 
   .welcome-message {
@@ -70,8 +74,20 @@
     flex-wrap: wrap;
   }
 
+  .about {
+    padding: 2rem 0;
+  }
+
   .welcome-card {
     margin-bottom: 3rem;
+  }
+
+  .main-about {
+    flex-wrap: wrap;
+  }
+
+  .about-text {
+    width: 100%;
   }
 
   .services {
@@ -80,16 +96,16 @@
 
   .contact {
     flex-direction: column;
-    justify-content: left;
+    padding-top: 4rem;
   }
 
   .contact-form {
-    width: 80%;
+    width: 80vw;
     left: 0;
   }
 
   .contact-image img {
-    width: 300px;
+    width: 80vw;
     height: auto;
   }
 }

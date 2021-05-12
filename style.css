@@ -215,7 +215,60 @@ p {
 }
 
 .about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 0;
+}
+
+.main-about {
+  display: flex;
   padding: 4rem 0;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about p {
+  background-color: black;
+}
+
+.about img {
+  height: 550px;
+  width: auto;
+  padding: 1rem;
+}
+
+.bio-more {
+  display: none;
+}
+
+.bio-more-open {
+  display: block;
+}
+
+.hide-button {
+  display: none;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  width: 50%;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
 }
 
 .services {
@@ -223,7 +276,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 3rem 0 0;
   width: 100%;
 }
 
@@ -302,7 +355,7 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .contact-image img {

@@ -81,3 +81,10 @@ window.onclick = function (event) {
     }
   }
 };
+
+window.onclick = function (event) {
+  if (event.target.matches(".read-more")) {
+    document.getElementById("bio-more").classList.toggle("bio-more");
+    document.getElementById("read-more").classList.toggle("hide-button");
+  }
+};

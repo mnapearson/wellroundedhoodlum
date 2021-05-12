@@ -57,11 +57,11 @@
       /></a>
 
       <div id="myLinks">
-        <a href="#about">about</a>
-        <a href="#services">services</a>
-        <a href="#media">media</a>
-        <a href="#equipment">equipment</a>
-        <a href="#contact">contact</a>
+        <a class="link" href="#about" onclick="myFunction()">about</a>
+        <a class="link" href="#services" onclick="myFunction()">services</a>
+        <a class="link" href="#media" onclick="myFunction()">media</a>
+        <a class="link" href="#equipment" onclick="myFunction()">equipment</a>
+        <a class="link" href="#contact" onclick="myFunction()">contact</a>
       </div>
 
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -146,11 +146,11 @@
     <section id="about" class="about">
       <div class="main-about">
         <div class="about-image">
-          <img src="" alt="" />
+          <img class="image-blurred-edge" src="images/biomatt.jpg" alt="" />
         </div>
         <div class="about-text">
           <div class="about-title">
-            <h2>Matthew Hendershot</h2>
+            <h1>Matthew Hendershot</h1>
             <h3>CEO and Founder</h3>
           </div>
           <div class="about-bio">
@@ -166,16 +166,7 @@
               artists on their next creative journeys by reimagining what the
               traditional production space can make possible.
             </p>
-            <p hidden>
-              Raised on the outskirts of Kansas, Hendershot eschewed the status
-              quo of his rural upbringing and instead pursued his first degree
-              in technical theatre before completing his Masters at the
-              Conservatory of Recording Arts and Sciences. Inspired by his
-              initial gigs in various night clubs, sound studios, and DIY
-              producing, he went on to establish Well Rounded Hoodlum in
-              Brooklyn, NY in 2010.
-            </p>
-            <p hidden>
+            <p>
               Under Well Rounded Hoodlum, Hendershot has utilized his
               multidisciplinary skill set to contract with companies like Adobe,
               Amazon, Apple, Ford Motor Company and MSL, along with working as
@@ -184,7 +175,22 @@
               of the podcast “Brave New Weed” as well as the host and producer
               of his own podcast, “I’ll Take a Shot at That.”
             </p>
-            <p hidden>
+            <div class="about-more">
+              <button class="read-more" id="read-more">read more</button>
+            </div>
+          </div>
+          <div class="bio-more" id="bio-more">
+            <p>
+              Raised on the outskirts of Kansas, Hendershot eschewed the status
+              quo of his rural upbringing and instead pursued his first degree
+              in technical theatre before completing his Masters at the
+              Conservatory of Recording Arts and Sciences. Inspired by his
+              initial gigs in various night clubs, sound studios, and DIY
+              producing, he went on to establish Well Rounded Hoodlum in
+              Brooklyn, NY in 2010.
+            </p>
+
+            <p>
               Recognizing in Leipzig the same kind of ambitious, generative
               spirit that so defines neighborhoods in Austin, Brooklyn and
               Berlin, Hendershot wants Well Rounded Hoodlum to be an accessible,
@@ -196,9 +202,9 @@
               medium of your project, Hendershot is ready to make it happen
               alongside a collective of diverse, uniquely skilled professionals.
             </p>
-          </div>
-          <div class="about-more">
-            <button>read more</button>
+            <div>
+              <button class="read-more" id="read-more">x</button>
+            </div>
           </div>
         </div>
       </div>
