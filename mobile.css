@@ -83,7 +83,8 @@
     padding: 2rem 0;
   }
 
-  .welcome-card {
+  .welcome-card,
+  .testimonial-card {
     margin-bottom: 3rem;
   }
 
