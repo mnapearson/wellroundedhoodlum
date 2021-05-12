@@ -362,11 +362,6 @@ p {
   padding: 3rem 0;
 }
 
-.contact-image img {
-  width: 500px;
-  height: auto;
-}
-
 .contact-image {
   display: flex;
   justify-content: center;
@@ -375,9 +370,25 @@ p {
 .contact-form {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  padding: 3rem 0;
 }
 
 .open {
   margin-top: 300px;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+}
+
+footer h2 {
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  color: black;
 }
