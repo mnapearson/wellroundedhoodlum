@@ -372,8 +372,9 @@ p {
   margin: 0 2rem;
 }
 
-.dropdown-content p {
+.dropdown-content li {
   text-align: left;
+  margin-bottom: 0.5rem;
   background-color: black;
 }
 
@@ -401,7 +402,7 @@ p {
 }
 
 .open {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 footer {
