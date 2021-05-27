@@ -43,16 +43,21 @@ nav {
   font-weight: bold;
 }
 
-header {
-  height: 100vh;
-  width: 100vw;
-}
-
 .slideshow-container {
-  max-width: 1200px;
-  max-height: 100%;
+  max-width: auto;
+  max-height: 50%;
   position: relative;
   margin: auto;
+}
+
+header {
+  height: 50vh;
+  margin-bottom: 2rem;
+}
+
+.mySlides img {
+  height: 500px;
+  width: auto;
 }
 
 /* Hide the images by default */
@@ -62,11 +67,6 @@ header {
 
 .myServiceSlides {
   display: none;
-}
-
-.mySlides img {
-  width: 100vw;
-  height: 100vh;
 }
 
 .fade {
@@ -99,13 +99,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .welcome-message {
-  margin: 1rem;
   text-align: center;
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .container {
