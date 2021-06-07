@@ -54,11 +54,10 @@ nav {
 
 header {
   height: 50vh;
-  margin-bottom: 2rem;
 }
 
 .mySlides img {
-  height: 500px;
+  height: 50vh;
   width: auto;
 }
 
