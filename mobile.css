@@ -79,10 +79,6 @@
     flex-wrap: wrap;
   }
 
-  .about {
-    padding: 2rem 0;
-  }
-
   .welcome-card,
   .testimonial-card {
     margin-bottom: 3rem;
@@ -93,7 +89,7 @@
   }
 
   .about-text {
-    width: 100%;
+    max-width: 100%;
   }
 
   .services {

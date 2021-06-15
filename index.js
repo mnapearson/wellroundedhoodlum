@@ -42,13 +42,12 @@ function mediaServices() {
 
 function eventServices() {
   document.getElementById("myDropdown4").classList.toggle("show");
-  document.getElementById("contact").classList.toggle("open");
 }
 
 window.onclick = function (event) {
   if (!event.target.matches(".dropbtn")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    var contact = document.getElementById("contact");
+
     var dropdown = document.getElementsByClassName("dropdown");
 
     var i;
@@ -58,7 +57,7 @@ window.onclick = function (event) {
 
       if (openDropdown.classList.contains("show")) {
         openDropdown.classList.remove("show");
-        contact.classList.remove("open");
+
         openDropdowns.classList.remove("open");
       }
     }

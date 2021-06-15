@@ -218,6 +218,29 @@ p {
   background: transparent;
 }
 
+.media {
+  padding-top: 8rem;
+  margin: 3rem;
+}
+
+.media-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.media-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.album-cover,
+.music-video,
+.podcast-episode {
+  margin: 1rem;
+}
+
 .about {
   display: flex;
   justify-content: center;
@@ -257,13 +280,18 @@ p {
   display: none;
 }
 
+.about {
+  display: flex;
+  justify-content: center;
+}
+
 .about-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .about-title {
@@ -366,38 +394,22 @@ p {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.testimonial-card {
+.testimonials {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 1rem;
-  padding: 1rem;
-  height: 250px;
-  width: 300px;
-  background-color: #333;
-  border-radius: 10px;
+  margin-top: 3rem;
 }
 
-.testimonial-card p,
-.testimonial-card .title,
-.testimonial-card h2 {
-  background-color: #333;
-  color: #e5e5e5;
-}
-
-.testimonial-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: black;
+.testimonials img {
+  width: 100%;
+  height: auto;
 }
 
 .services {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 3rem 0 0;
   width: 100%;
 }
@@ -475,18 +487,12 @@ p {
   display: block;
 }
 
-.equipment {
-  display: flex;
-  justify-content: center;
-  padding: 4rem 0;
-}
-
 .equipment img {
   border-radius: 10px;
 }
 
 .equip-image {
-  margin-top: 3rem;
+  margin-top: 2rem;
   background-color: #e5e5e5;
   padding: 2rem;
   border-radius: 10px;
